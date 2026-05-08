@@ -29,7 +29,12 @@ notebook.add(frame5, text="Возведение в степень")
 notebook.add(frame6, text="Уравнения и неравенства")
 notebook.add(frame7, text="Графики функций")
 
-
-#add_btns_in_frame(frame2)
+add_btns_in_frame(frame1, "arithmetic")
+add_btns_in_frame(frame2, "fractions")
+add_btns_in_frame(frame3, "square_roots")
+add_btns_in_frame(frame4, "percentages")
+add_btns_in_frame(frame7, "graphs")
+add_btns_in_frame(frame5, "power" )
+add_btns_in_frame(frame6, "equations" )
 
 window.mainloop()

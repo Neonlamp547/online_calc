@@ -5,7 +5,7 @@ from categories import add_btns_in_frame
 window = tk.Tk()
 window.title("Онлайн кальулятор")
 window.geometry("800x550")
-window.resizable(False,False)
+
 
 #Создаем набор вкладок
 notebook = ttk.Notebook()

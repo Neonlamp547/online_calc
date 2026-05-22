@@ -6,10 +6,20 @@ from button import open_minus
 from button import open_umn
 from button import open_del
 from button import open_quadratic_solver3
-from button import open_quadratic_solver4
-from button import open_quadratic_solver5
-from button import open_quadratic_solver6
-from button import open_quadratic_solver7
+from button import open_percent_calculator
+
+from button import open_linear_equation_solver
+from button import open_quadratic_solver_with_graph
+from button import open_biquadratic_solver
+from button import open_linear_inequality_solver
+from button import open_add_percent
+from button import open_quadratic_inequality
+from button import open_add_powers
+from button import open_power_subtraction
+
+from button import open_subtract_percent
+from button import open_power_calculator
+
 
 #Создание кнопок
 def add_btns_in_frame(frame,category_name):
@@ -56,50 +66,42 @@ def add_btns_in_frame(frame,category_name):
         btn5.pack(pady=5, fill='x', padx=20)
         
     elif category_name == "percentages":
-        btn1 = ttk.Button(frame, text="Проценты", padding=(10,30), command=open_quadratic_solver4)
+        btn1 = ttk.Button(frame, text="Проценты", padding=(10,30), command=open_percent_calculator)
         btn1.pack(pady=5, fill='x', padx=20)
-        btn2 = ttk.Button(frame, text="Сложение процентов", padding=(10,30), command=open_quadratic_solver4)
+        btn2 = ttk.Button(frame, text="Сложение процентов", padding=(10,30), command=open_add_percent)
         btn2.pack(pady=5, fill='x', padx=20)
-        btn3 = ttk.Button(frame, text="Вычитание процентов", padding=(10,30), command=open_quadratic_solver4)
+        btn3 = ttk.Button(frame, text="Вычитание процентов", padding=(10,30), command=open_subtract_percent)
         btn3.pack(pady=5, fill='x', padx=20)
         
         
     elif category_name == "power":
         
-        btn1 = ttk.Button(frame, text="Возведение в степень", padding=(10,30), command=open_quadratic_solver5)
+        btn1 = ttk.Button(frame, text="Возведение в степень", padding=(10,30), command=open_power_calculator)
         btn1.pack(pady=5, fill='x', padx=20)
-        btn2 = ttk.Button(frame, text="Сложение степеней", padding=(10,30), command=open_quadratic_solver5)
+        btn2 = ttk.Button(frame, text="Сложение степеней", padding=(10,30), command=open_add_powers)
         btn2.pack(pady=5, fill='x', padx=20)
-        btn3 = ttk.Button(frame, text="Вычитание степеней", padding=(10,30), command=open_quadratic_solver5)
+        btn3 = ttk.Button(frame, text="Вычитание степеней", padding=(10,30), command=open_power_subtraction)
         btn3.pack(pady=5, fill='x', padx=20)
-        btn4 = ttk.Button(frame, text="Умножение степеней", padding=(10,30), command=open_quadratic_solver5)
+        btn4 = ttk.Button(frame, text="Умножение степеней", padding=(10,30))
         btn4.pack(pady=5, fill='x', padx=20)
-        btn5 = ttk.Button(frame, text="Деление степеней", padding=(10,30), command=open_quadratic_solver5)
+        btn5 = ttk.Button(frame, text="Деление степеней", padding=(10,30))
         btn5.pack(pady=5, fill='x', padx=20)
         
         
-    elif category_name == "graphs":
-        btn1 = ttk.Button(frame, text="Прямая", padding=(10,30), command=open_quadratic_solver6)
-        btn1.pack(pady=5, fill='x', padx=20)
-        btn2 = ttk.Button(frame, text="Гипербола", padding=(10,30), command=open_quadratic_solver6)
-        btn2.pack(pady=5, fill='x', padx=20)
-        btn3 = ttk.Button(frame, text="Пораболы", padding=(10,30), command=open_quadratic_solver6)
-        btn3.pack(pady=5, fill='x', padx=20)
-        btn5 = ttk.Button(frame, text="Ветвь пораболы", padding=(10,30), command=open_quadratic_solver6)
-        btn5.pack(pady=5, fill='x', padx=20)
+  
         
     elif category_name == "equations":
-        btn1 = ttk.Button(frame, text="Линейное уравнение", padding=(10,30), command=open_quadratic_solver7)
+        btn1 = ttk.Button(frame, text="Линейное уравнение", padding=(10,30), command=open_linear_equation_solver)
         btn1.pack(pady=5, fill='x', padx=20)
         
-        btn2 = ttk.Button(frame, text="Квадратное уравнение", padding=(10,30), command=open_quadratic_solver7)
+        btn2 = ttk.Button(frame, text="Квадратное уравнение", padding=(10,30), command=open_quadratic_solver_with_graph)
         btn2.pack(pady=5, fill='x', padx=20)
         
-        btn3 = ttk.Button(frame, text="Биквадратное уравнение", padding=(10,30), command=open_quadratic_solver7)
+        btn3 = ttk.Button(frame, text="Биквадратное уравнение", padding=(10,30), command=open_biquadratic_solver)
         btn3.pack(pady=5, fill='x', padx=20)
         
-        btn4 = ttk.Button(frame, text="Линейное неравенство", padding=(10,30), command=open_quadratic_solver7)
+        btn4 = ttk.Button(frame, text="Линейное неравенство", padding=(10,30), command=open_linear_inequality_solver)
         btn4.pack(pady=5, fill='x', padx=20)
         
-        btn5 = ttk.Button(frame, text="Квадратное неравенство", padding=(10,30), command=open_quadratic_solver7)
+        btn5 = ttk.Button(frame, text="Квадратное неравенство", padding=(10,30), command=open_quadratic_inequality)
         btn5.pack(pady=5, fill='x', padx=20)
